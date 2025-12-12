@@ -18,7 +18,6 @@ const ProtectedRoute: React.FC<{ children: React.ReactElement }> = ({ children }
   if (isAuthenticated === null) {
     return null; // or a loading spinner
   }
-
   return isAuthenticated ? children : <Navigate to="/admin" />;
 };
 
